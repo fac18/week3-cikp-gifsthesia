@@ -4,7 +4,7 @@
   "description": "",
   "main": "script-gifs.js",
   "scripts": {
-    "test": "tape src/tests/*.js | tap-spec",
+    "test": "tape src/tests/test-lyrics.js | tap-spec",
     "cover": "nyc tape src/tests/*.js | tap-spec"
   },
   "keywords": [],
