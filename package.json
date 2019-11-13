@@ -1,11 +1,11 @@
 {
-  "name": "week3-CIKP",
+  "name": "week3-cikp-gifsthesia",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "script-gifs.js",
   "scripts": {
-    "test": "tape test.js | tap-spec",
-    "cover": "nyc tape test.js | tap-spec"
+    "test": "tape src/tests/*.js | tap-spec",
+    "cover": "nyc tape src/tests/*.js | tap-spec"
   },
   "keywords": [],
   "author": "",
