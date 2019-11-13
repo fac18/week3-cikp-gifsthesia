@@ -1,2 +1,5 @@
-# week3-cikp-gifsthesia
+# Gifsthesia
 Jamie, Kin, Reda &amp; Roshan's API project
+
+---
+
