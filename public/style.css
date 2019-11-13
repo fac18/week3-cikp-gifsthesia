@@ -1,0 +1,60 @@
+
+:root {
+    /* colour variables */
+    /* --dodo: #93827f;
+    --golden: #f3f9d2;
+    --vanilla: #bdc4a7;
+    --jet: #2f2f2f;
+    --cadet: #92b4a7;
+    --forest: rgb(9, 100, 76); */
+    /* spacing variables: golden ratio */
+    --space-xs: 0.382rem;
+    --space-s: 0.618rem;
+    --space-m: 1rem;
+    --space-l: 1.618rem;
+    --space-xl: 2.618rem;
+    --space-xxl: 4.236rem;
+    /* Fonts */
+    font-family:
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: ;
+}
+
+.lyric-gifs {
+
+}
+
+.instruction {
+
+}
+
+.gif-container {
+
+}
+
+.hints {
+
+}
+
+.hint-artist {
+
+}
+
+.hint-lyrics {
+
+}
+
+.reveal {
+
+}
+
+.reveal-song {
+    
+}
+
