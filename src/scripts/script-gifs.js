@@ -12,6 +12,28 @@ const separateSnippet = (snippet) => {
     return words;
 }
 
+(function(){
+    let xhr = new XMLHttpRequest();
+    let url = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            let giphyObj = JSON.parse(xhr.responseText);
+            console.log(giphyObj);
+            let newGif = document.createElement("img");
+            let gifContainer = document.querySelector(".gif-container");
+            gifContainer.appendChild(newGif);
+            let link = giphyObj.data[1].images.downsized_medium.url;
+            newGif.src =link;  
+        }
+    }
+    xhr.open("GET", url, true)
+    xhr.send();
+})()
+
+
+
+
+
 
 
 
