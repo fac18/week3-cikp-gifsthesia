@@ -36,15 +36,21 @@ body {
     flex-flow: column nowrap;
 }
 
-section, header, footer {
+section, header, footer, .new-game {
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
 
 h1 {
     font-size: var(--space-xl);
     display: flex;
     justify-content: center;
+}
+
+h3 {
+    color: black;
+    font-size: var(--space-l);
 }
 
 p {
@@ -56,11 +62,6 @@ p {
     display: flex;
     justify-content: center;
     text-align: center;
-
-}
-
-.lyric-gifs {
-    margin: 0 auto;
 }
 
 .instruction {
@@ -73,13 +74,11 @@ p {
 
 /* Hints button container */
 .hints {
-
+    display: flex;
+    flex-direction: column;
 }
 
-/*  */
-.reveal {
 
-}
 
 /* Buttons */
 
@@ -91,6 +90,8 @@ button {
     margin: var(--space-m);
     border: var(--space-s) var(--razzmatazz);
     box-shadow: 2px 2px var(--whiteout);
+    min-width: 17rem;
+    max-width: 17rem;
 
     display: flex;
     align-items: center;
@@ -102,6 +103,7 @@ button:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.02);
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    margin: var(--space-m);
 }
 
 .new-game {
@@ -112,14 +114,8 @@ button:hover {
     background-color: var(--yell);
 }
 
-.hint-artist:hover {
-}
-
 .hint-lyrics {
     background-color: var(--mango);
-}
-
-.hint-lyrics:hover {
 }
 
 .reveal-song {
@@ -134,16 +130,23 @@ button:hover {
 /* Media Queries Tablet & Desktop */
 @media (min-width: 768px) {
 
-    .gif-container {
-
-    }
-
     h1 {
         font-size: var(--space-xxl);
     }
 
     .instruction {
         font-size: var(--space-xl);
+        display: flex;
     }
 
+    .hints {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    /* Reveal button container */
+.reveal {
+        display: flex;
+        flex-flow: row wrap;
+}
 }
