@@ -33,6 +33,32 @@ Readme requirements to-do:
 
 ---
 
+#### Things to check before we start:
+
+Musixmatch x Giphy 
+
+Are there issues with CORS requests? ✅ But we didn't know! :( 
+Is there a high enough rate limit? ✅
+Is a free API key available? ✅
+Are you able to use the API without user authentication (oAuth)? ✅
+Is good documentation available? ✅
+
+---
+
+#### Requirements
+
+APIs: Your app queries at least two APIs using the XMLHttpRequest method ✅
+Your app features some dynamic content ✅
+UX/UI : A clearly defined user journey, documented in your readme ✅
+Architecture: A well-considered architecture for your app ✅
+Code: break your JavaScript down into small functions with a clear input and output; this will make it easy to write tests
+Tests: write tests for pure functions ✅
+Design: aim for a responsive, mobile-first design ✅
+Accessibility: same as always, we'll be running your code through accessibility checkers ✅
+Take appropriate measures when it comes to concealing private information (i.e. your API key!) 
+
+---
+
 ### We used the musixmatch API to:
 
 1. request the top 50 chart tracks from the UK
@@ -45,6 +71,7 @@ Readme requirements to-do:
 
 1. 
 2. 
+3.
 
 ---
 
@@ -63,9 +90,40 @@ Readme requirements to-do:
 
 ---
 
-#### Title
+### Software Architecture
 
-
-
+*insert image here*
 
 ---
+
+### Code
+
+---
+
+### TDD
+
+---
+
+### Design
+
+- We used a hierarchical, traffic light system for the buttons, to provide the user with implicit cues
+- Our gifs 
+- We went with a sort of 90s retro-psychedelic colour scheme
+- We were keen to try CSS grid but our site was so simple it didn't really merit it, and so we stuck to flexbox to make our site responsive 
+- Reda had a quick play on Figma with Sarah, which looks super cool
+
+---
+
+### a11y
+
+- 
+
+---
+
+### API Key
+
+![](https://media.giphy.com/media/3oFyCYNrra8qo1Cv8Q/giphy.gif)
+
+
+
+
