@@ -36,7 +36,7 @@ function getRandomTrackInfo(callback) {
     xhr.send();
 };
 
-function getRandomTrackLyrics() {
+function getRandomTrackLyrics(cb) {
     const xhr = new XMLHttpRequest();
     // let url = "https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.snippet.get?apikey=a515bb508047c4dbf594264ecfde2094&track_id=" + randomId;
     let url = "https://api.musixmatch.com/ws/1.1/track.snippet.get?apikey=a515bb508047c4dbf594264ecfde2094&track_id=" + trackInfo.id;
@@ -47,9 +47,8 @@ function getRandomTrackLyrics() {
             // console.log("getRandomTrackLyrics function status 200");
             const response = JSON.parse(xhr.responseText);
             trackInfo.lyrics = response.message.body.snippet.snippet_body;
-            // console.log(trackInfo);
-            return trackInfo.lyrics;
-            // return something??
+            console.log(trackInfo);
+            return cb(trackInfo.lyrics);
         }
     }
     xhr.open("GET", url, true);
