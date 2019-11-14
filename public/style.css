@@ -29,11 +29,14 @@ html {
 }
 
 body {
-    background-color: var(--unblue);
+    background: linear-gradient(to top, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     text-transform: uppercase;
     display: flex;
     flex-flow: column nowrap;
+    font-family: 'Galindo', cursive;
+    position: relative;
+    min-height: 100vh;
 }
 
 section, header, footer, .new-game, .gif-container {
@@ -42,7 +45,13 @@ section, header, footer, .new-game, .gif-container {
     flex-direction: column;
 }
 
-img
+footer {
+    margin: var(--space-l), 0, 0, 0;
+}
+
+img {
+
+}
 
 h1 {
     font-size: var(--space-xl);
@@ -53,6 +62,7 @@ h1 {
 h3 {
     color: black;
     font-size: var(--space-l);
+    font-family: 'Galindo', cursive;
 }
 
 p {
@@ -92,6 +102,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 button:hover {
@@ -99,6 +110,7 @@ button:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.02);
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    color: black;
 }
 
 .new-game {
@@ -115,6 +127,7 @@ button:hover {
 
 .reveal-song {
     background-color: var(--razzmatazz);
+    color: var(--whiteout);
 }
 
 /* Media Queries Tablet & Desktop */
@@ -132,5 +145,12 @@ button:hover {
     .hints, .gif-container, .reveal {
         display: flex;
         flex-flow: row wrap;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: var(--space-l);
     }
 }
