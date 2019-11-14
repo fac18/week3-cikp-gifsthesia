@@ -2,7 +2,7 @@
 Jamie, Kin, Reda &amp; Roshan's API project
 
 ---
-#### To run our app properly:
+#### To run our site properly:
 
 - Please install this chrome extension [Moesif Origin & CORS Changer](https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc) which will help with the CORS issue and allow the API calls to be made
 
