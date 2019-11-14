@@ -75,7 +75,7 @@ Musixmatch x Giphy
 
 ---
 
-### The User Journey
+### The Gifsthesia User Journey
 
 1. Landing Page = Home page = all the pages = 1 page site!
 2. Title & instructions for playing the game
@@ -98,6 +98,10 @@ Musixmatch x Giphy
 
 ### Code
 
+Lots of this!
+
+![](https://i.imgur.com/Ha9fMyJ.png)
+
 ---
 
 ### TDD
@@ -107,7 +111,7 @@ Musixmatch x Giphy
 ### Design
 
 - We used a hierarchical, traffic light system for the buttons, to provide the user with implicit cues
-- Our gifs 
+- We used CSS Variables for colour and spacing. Long live CSS Variables! ⭐
 - We went with a sort of 90s retro-psychedelic colour scheme
 - We were keen to try CSS grid but our site was so simple it didn't really merit it, and so we stuck to flexbox to make our site responsive 
 - Reda had a quick play on Figma with Sarah, which looks super cool
@@ -123,6 +127,25 @@ Musixmatch x Giphy
 ### API Key
 
 ![](https://media.giphy.com/media/3oFyCYNrra8qo1Cv8Q/giphy.gif)
+
+--- 
+
+### What we learnt along the way
+
+![](https://media.giphy.com/media/SPZFhfUJjsJO0/giphy.gif)
+
+---
+
+### Sync vs Async and the Event Loop
+
+- Our gifs were coming back alright, but they weren't displaying in the right order
+- It was everything we'd learnt last week in action!
+
+---
+
+### Misc things learnt
+
+- check your file paths. An errant / here or a missing . there can make all the difference
 
 
 
