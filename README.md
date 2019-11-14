@@ -18,6 +18,17 @@ You can then run npm test to run the tests, or npm run coverage to run nyc along
 
 ---
 
+### What is GIFsthesia?
+
+A game that involves guessing a song based on a snippet of lyrics, where each word is represented by a GIF. Snazzy!
+
+We used the musixmatch API to:
+1. request the top 50 chart tracks from the UK
+..* we created a function to select a random song from this      
+2. request the lyric snippet, song name and artist, when provided with a song's ID 
+
+---
+
 Readme requirements to-do:
 - A clearly defined user journey, documented in your readme.
 - more screenshots of how game should look
