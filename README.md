@@ -37,32 +37,32 @@ Readme requirements to-do:
 
 Musixmatch x Giphy 
 
-Are there issues with CORS requests? ✅ But we didn't know! :( 
-Is there a high enough rate limit? ✅
-Is a free API key available? ✅
-Are you able to use the API without user authentication (oAuth)? ✅
-Is good documentation available? ✅
+- Are there issues with CORS requests? ✅ But we didn't know! :( 
+- Is there a high enough rate limit? ✅
+- Is a free API key available? ✅
+- Are you able to use the API without user authentication (oAuth)? ✅
+- Is good documentation available? ✅
 
 ---
 
 #### Requirements
 
-APIs: Your app queries at least two APIs using the XMLHttpRequest method ✅
-Your app features some dynamic content ✅
-UX/UI : A clearly defined user journey, documented in your readme ✅
-Architecture: A well-considered architecture for your app ✅
-Code: break your JavaScript down into small functions with a clear input and output; this will make it easy to write tests
-Tests: write tests for pure functions ✅
-Design: aim for a responsive, mobile-first design ✅
-Accessibility: same as always, we'll be running your code through accessibility checkers ✅
-Take appropriate measures when it comes to concealing private information (i.e. your API key!) 
+- APIs: Your app queries at least two APIs using the XMLHttpRequest method ✅
+- Your app features some dynamic content ✅
+- UX/UI : A clearly defined user journey, documented in your readme ✅
+- Architecture: A well-considered architecture for your app ✅
+- Code: break your JavaScript down into small functions with a clear input and output; this will make it easy to write tests
+- Tests: write tests for pure functions ✅
+- Design: aim for a responsive, mobile-first design ✅
+- Accessibility: same as always, we'll be running your code through accessibility checkers ✅
+- Take appropriate measures when it comes to concealing private information (i.e. your API key!) 
 
 ---
 
-### We used the musixmatch API to:
+### We used the Musixmatch API to:
 
 1. request the top 50 chart tracks from the UK
-..* we created a function to select a random song from this      
+* we created a function to select a random song from this      
 2. send a song's ID and request the lyric snippet, song name and artist 
 
 ---
