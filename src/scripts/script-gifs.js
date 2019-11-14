@@ -1,20 +1,29 @@
 'use strict';
 
-//let snippet = "and I think it's gonna be a long long time";
-let words = [];
-const urls = [];
+const gifGetter = () => {
 
-const separateSnippet = (snippet) => {
+let snippet = trackInfo.lyrics;
+let words = [];
+
+const separateSnippet = (x) => {
     let snippedSnippet = snippet.replace(/'/g, "");
-    console.log(snippedSnippet)
     words = snippedSnippet.split(" ");
-    //console.log(words);
+    console.log('this is before the loop', words);
     return words;
 }
 
+separateSnippet(snippet);
+
+const gifStack = (w) => {
+    console.log('this is immediately before the loop', w);
+    for (let i=0; i<words.length; i++) {
+        let snippetWord = words[i];
+
+
 (function(){
     let xhr = new XMLHttpRequest();
-    let url = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
+    let url = "http://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=2";
+    console.log('this is snippetword', snippetWord);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let giphyObj = JSON.parse(xhr.responseText);
@@ -22,14 +31,21 @@ const separateSnippet = (snippet) => {
             let newGif = document.createElement("img");
             let gifContainer = document.querySelector(".gif-container");
             gifContainer.appendChild(newGif);
-            let link = giphyObj.data[1].images.downsized_medium.url;
-            newGif.src =link;  
+            let link = giphyObj.data[0].images.downsized_medium.url;
+            newGif.src = link;  
         }
     }
     xhr.open("GET", url, true)
     xhr.send();
 })()
 
+};
+}
+
+gifStack(words);
+
+
+};
 
 
 
@@ -41,6 +57,4 @@ const separateSnippet = (snippet) => {
 
 
 
-
-
-module.exports = separateSnippet;
+ //module.exports = separateSnippet;
