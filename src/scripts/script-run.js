@@ -1,11 +1,17 @@
 // button event
 
-const newGameButton = document.querySelector(".new-game")
+const gifContainer = document.querySelector(".gif-container");
+const newGameButton = document.querySelector(".new-game");
 
 newGameButton.addEventListener('click', function() {
-    getRandomTrackInfo(getRandomTrackLyrics);
-    gifGetter();
+
+while (gifContainer.firstChild) {
+        gifContainer.removeChild(gifContainer.firstChild);
+    }
+    getRandomTrackInfo(function() {
+        getRandomTrackLyrics(gifGetter);
     clearArtistHint();
+    });
 })
 
 const artistHintButton = document.querySelector(".hint-artist");
