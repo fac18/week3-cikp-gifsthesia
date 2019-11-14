@@ -1,6 +1,6 @@
 
 
-const gifGetter = () => {
+function gifGetter() {
 
 let snippet = trackInfo.lyrics;
 let words = [];
@@ -32,22 +32,33 @@ const gifStack = (w) => {
             let gifContainer = document.querySelector(".gif-container");
             gifContainer.appendChild(newGif);
             let link = giphyObj.data[0].images.downsized_medium.url;
-            newGif.src = link;  
+            newGif.src = link;
+            // wait(1000);
         }
     }
     xhr.open("GET", url, true)
     xhr.send();
-})()
-
+})();
 };
 }
-
 gifStack(words);
-
-
 };
 
+// function wait(ms) {
+//     let start = new Date().getTime();
+//     let end = start;
+//     while(end < start + ms) {
+//         end = new Date().getTime();
+//     }
+// }
 
+// const wait = () => {
+//     setTimeout(logger, 1000);
+//     }
+
+// const logger = () => {
+//     console.log("wait for it...");
+// }
 
 
 
