@@ -116,7 +116,7 @@ Take appropriate measures when it comes to concealing private information (i.e. 
 
 ### a11y
 
-- 
+![](https://i.imgur.com/HqSUagh.png)
 
 ---
 
