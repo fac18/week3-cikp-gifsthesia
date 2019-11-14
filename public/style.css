@@ -1,12 +1,13 @@
-
 :root {
-    /* colour variables */
-    /* --dodo: #93827f;
-    --golden: #f3f9d2;
-    --vanilla: #bdc4a7;
-    --jet: #2f2f2f;
-    --cadet: #92b4a7;
-    --forest: rgb(9, 100, 76); */
+    /* colour variables */ 
+    --limey: rgb(119, 237, 72);
+    --darklime: rgb(40, 196, 92);
+    --yell: rgb(245, 203, 14);
+    --mango: #FF8635;
+    --razzmatazz: #E42870;
+    --unblue: rgb(25, 119, 242);
+    --whiteout: white;
+
     /* spacing variables: golden ratio */
     --space-xs: 0.382rem;
     --space-s: 0.618rem;
@@ -14,24 +15,44 @@
     --space-l: 1.618rem;
     --space-xl: 2.618rem;
     --space-xxl: 4.236rem;
-    /* Fonts */
-    font-family:;
+    /* Fonts  */
+    font-family: 'Galindo', cursive;
+    /* font-family: 'Roboto Mono', monospace; */
 }
-  
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: ;
+    background-color: var(--unblue);
+    color: white;
+    text-transform: uppercase;
+}
+
+section, header, footer {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: var(--space-xl);
+}
+
+p {
+    font-family: 'Galindo', cursive;
+    text-transform: uppercase;
 }
 
 .lyric-gifs {
-
+    margin: 0 auto;
 }
 
 .instruction {
-
+    font-size: var(--space-l);
 }
 
 .gif-container {
@@ -42,19 +63,69 @@ body {
 
 }
 
-.hint-artist {
-
-}
-
-.hint-lyrics {
-
-}
-
 .reveal {
 
 }
 
-.reveal-song {
-    
+/* Buttons */
+
+button {
+    border-radius: var(--space-m);
+    color: black;
+    font-size: var(--space-l);
+    padding: var(--space-xs);
+    margin: var(--space-s);
+    border: var(--space-s) var(--razzmatazz);
+    box-shadow: 2px 2px var(--whiteout);
 }
 
+button:hover {
+    background: linear-gradient(130deg, var(--limey), var(--darklime));
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
+.new-game {
+    background-color: var(--darklime);
+}
+
+.hint-artist {
+    background-color: var(--yell);
+}
+
+.hint-artist:hover {
+}
+
+.hint-lyrics {
+    background-color: var(--mango);
+}
+
+.hint-lyrics:hover {
+}
+
+.reveal-song {
+    background-color: var(--razzmatazz);
+}
+
+.reveal-song:hover {
+
+}
+
+
+/* Media Queries Tablet & Desktop */
+@media (min-width: 768px) {
+
+    .gif-container {
+
+    }
+
+    h1 {
+        font-size: var(--space-xxl);
+    }
+
+    .instruction {
+        font-size: var(--space-xl);
+    }
+
+}
