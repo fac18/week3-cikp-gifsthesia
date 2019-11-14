@@ -148,9 +148,11 @@ button:hover {
     }
 
     footer {
+        display: flex;
+        align-items: flex-end;
         position: absolute;
         bottom: 0;
         width: 100%;
-        padding: var(--space-l);
+        margin: var(--space-l);
     }
 }
