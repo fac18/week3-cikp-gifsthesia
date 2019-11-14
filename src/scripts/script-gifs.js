@@ -1,4 +1,4 @@
-'use strict';
+
 
 const gifGetter = () => {
 
@@ -60,4 +60,4 @@ gifStack(words);
 
 
 
-module.exports = separateSnippet;
+//module.exports = separateSnippet;
