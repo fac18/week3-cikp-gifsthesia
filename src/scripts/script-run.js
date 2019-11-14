@@ -53,3 +53,25 @@ const clearLyricsHint = function() {
     console.log("Artist hint cleared");
 }
 }
+
+// reveal-song
+
+const artistTrackHintButton = document.querySelector(".reveal-song");
+let artistTrackName = document.createElement('h3');
+
+artistTrackHintButton.addEventListener('click', function() {
+    console.log(trackInfo.artist);
+    let artistTrackHint = artistTrackHintButton.appendChild(artistTrackName);
+    artistTrackHint.textContent = "Song: " + trackInfo.artist + "- " + trackInfo.track;
+})
+
+const clearArtistTrackHint = function() {
+    console.log("inside clear artistTrack function")
+    console.log("this is the artist and track names", artistTrackName);
+    console.log(artistHintButton.contains(artistTrackName));
+    if (artistTrackHintButton.contains(artistTrackName)) {
+        artistTrackHintButton.removeChild(artistTrackName)
+    console.log("Artist and track hint cleared");
+}
+}
+
