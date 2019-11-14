@@ -28,7 +28,7 @@ function getRandomTrackInfo(callback) {
             trackInfo.id = trackList[randomIndex].track.track_id;
             trackInfo.artist = trackList[randomIndex].track.artist_name;
             trackInfo.track = trackList[randomIndex].track.track_name;
-            // console.log(trackInfo);
+            console.log(trackInfo.artist);
             callback();
         }
     }
