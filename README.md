@@ -55,7 +55,7 @@ Readme requirements to-do:
 3. Clicking the green 'start game' button generates the gifs
 4. User tries to guess the lyrics from the displayed gifs
 5. User can click on hint buttons. The first hint button reveals the artist, the second reveals the lyric snippet
-6. Finally, if the user is fed up the almost impossible challenge, they can hit the reveal button to show the song name and who sang it!
+6. Finally, the user is exhausted trying to solve this impossible challenge, they hit the reveal button to reveal the song name and who sang it!
 
 7. Repeat above from point 3. *insert callbacks/ recursion joke here*
 
