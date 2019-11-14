@@ -20,19 +20,44 @@ You can then run npm test to run the tests, or npm run coverage to run nyc along
 
 ### What is GIFsthesia?
 
-A game that involves guessing a song based on a snippet of lyrics, where each word is represented by a GIF. Snazzy!
+A game that involves guessing a song based on a snippet of its lyrics, where each word is represented by a GIF. Snazzy!
 
-We used the musixmatch API to:
-1. request the top 50 chart tracks from the UK
-..* we created a function to select a random song from this      
-2. request the lyric snippet, song name and artist, when provided with a song's ID 
+![](https://media.giphy.com/headers/2019-11-13-31-1573677075/unnamed.gif)
 
 ---
 
+// NOTES
 Readme requirements to-do:
 - A clearly defined user journey, documented in your readme.
 - more screenshots of how game should look
 
+---
+
+### We used the musixmatch API to:
+
+1. request the top 50 chart tracks from the UK
+..* we created a function to select a random song from this      
+2. send a song's ID and request the lyric snippet, song name and artist 
+
+---
+
+### and the Giphy API to:
+
+1. 
+2. 
+
+---
+
+### The User Journey
+
+1. Landing Page = Home page = all the pages = 1 page site!
+2. Title & instructions for playing the game
+3. Clicking the green 'start game' button generates the gifs
+4. User tries to guess the lyrics from the displayed gifs
+5. User can click on hint buttons. The first hint button reveals the artist, the second reveals the lyric snippet
+6. Finally, if the user is fed up the almost impossible challenge, they can hit the reveal button to show the song name and who sang it!
+
+7. Repeat above from point 3. *insert callbacks/ recursion joke here*
 
 ---
 
