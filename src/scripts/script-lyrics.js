@@ -1,4 +1,4 @@
-"use strict";
+
 
 const trackInfo = {
     id: 0,
