@@ -1,17 +1,24 @@
+
+let gifKey = config.GIFS_KEY; // fetch key from config file
+
+// Wrapper function to allow all the below to run from one call.
+
 function gifGetter() {
 
+    // Takes lyrics snippet from the musicmatch API call on script-lyrics.js file
     let snippet = trackInfo.lyrics;
     let words = [];
 
+    // Create an array of each word and remove apostrophes
     const separateSnippet = (x) => {
         let snippedSnippet = snippet.replace(/'/g, "");
         words = snippedSnippet.split(" ");
-        console.log('this is before the loop', words);
         return words;
     }
 
     separateSnippet(snippet);
 
+    // This function runs a GIPHY API call for each word in the words array, then appends the relevant GIF image to the page via the DOM
     const gifStack = (w) => {
         for (let i=0; i<words.length; i++) {
             let snippetWord = words[i];
