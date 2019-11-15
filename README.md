@@ -122,6 +122,11 @@ Lots of this!
 
 ---
 
+![](https://i.imgur.com/9cc4QnA.png)
+
+---
+
+
 ### a11y
 
 ![](https://i.imgur.com/HqSUagh.png)
@@ -145,6 +150,10 @@ Lots of this!
 - Our gifs were coming back, alright, but they weren't displaying in the right order 😱
 - It was everything we'd learnt last week in action! Except that we wanted things to be synced (one after another) rather than async
 - Resolving this was a special level of hell
+
+---
+
+![](https://i.imgur.com/ocSKhEb.png)
 
 ---
 
