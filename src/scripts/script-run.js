@@ -8,6 +8,7 @@ newGameButton.addEventListener('click', function() {
 while (gifContainer.firstChild) {
         gifContainer.removeChild(gifContainer.firstChild);
     }
+    clearArtistTrackHint();
     clearArtistHint();
     clearLyricsHint();
     getRandomTrackInfo(function() {
@@ -15,6 +16,7 @@ while (gifContainer.firstChild) {
 })
 })
 
+//artist hint
 
 const artistHintButton = document.querySelector(".hint-artist");
 let artistName = document.createElement('h3');
@@ -34,6 +36,8 @@ const clearArtistHint = function() {
     console.log("Artist hint cleared");
 }
 }
+
+//lyrics hint 
 
 const lyricsHintButton = document.querySelector(".hint-lyrics");
 let lyricsName = document.createElement('h3');
