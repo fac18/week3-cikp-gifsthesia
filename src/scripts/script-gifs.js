@@ -19,7 +19,7 @@ function gifGetter() {
 
             function gifCall() {
                 let xhr = new XMLHttpRequest();
-                let url = "http://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=1";
+                let url = "https://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=1";
         
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState == 4 && xhr.status == 200) {
