@@ -39,31 +39,5 @@ function gifGetter() {
 gifStack(words);
 };
 
-// function wait(ms) {
-//     let start = new Date().getTime();
-//     let end = start;
-//     while(end < start + ms) {
-//         end = new Date().getTime();
-//     }
-// }
-
-// const wait = () => {
-//     setTimeout(logger, 1000);
-//     }
-
-// const logger = () => {
-//     console.log("wait for it...");
-// }
 
 
-
-
-
-
-
-
-
-
-
-
-//module.exports = separateSnippet;
