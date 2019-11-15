@@ -153,6 +153,12 @@ Lots of this!
 
 ---
 
+### Error message when running Giphy API
+
+- Works just fine in local machine's live server
+- Seems like GitHub pages is blocking the API request
+- HTTPS? SSL certificate? CORS? Running insecure content?
+
 ![](https://i.imgur.com/ocSKhEb.png)
 
 ---
