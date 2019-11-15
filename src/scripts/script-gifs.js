@@ -11,7 +11,7 @@ const separateSnippet = (x) => {
     console.log('this is before the loop', words);
     return words;
 }
-
+module.exports = separateSnippet;
 separateSnippet(snippet);
 
 const gifStack = (w) => {
@@ -35,7 +35,6 @@ const gifStack = (w) => {
             gifContainer.appendChild(newGif);
             let link = giphyObj.data[0].images.fixed_height.url;
             newGif.src = link;
-            // wait(1000);
         }
     }
     xhr.open("GET", url, true)
@@ -44,33 +43,8 @@ const gifStack = (w) => {
 };
 }
 gifStack(words);
+
 };
 
-// function wait(ms) {
-//     let start = new Date().getTime();
-//     let end = start;
-//     while(end < start + ms) {
-//         end = new Date().getTime();
-//     }
-// }
-
-// const wait = () => {
-//     setTimeout(logger, 1000);
-//     }
-
-// const logger = () => {
-//     console.log("wait for it...");
-// }
 
 
-
-
-
-
-
-
-
-
-
-
-//module.exports = separateSnippet;
