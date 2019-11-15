@@ -142,8 +142,9 @@ Lots of this!
 
 ### Sync vs Async and the Event Loop
 
-- Our gifs were coming back alright, but they weren't displaying in the right order
-- It was everything we'd learnt last week in action!
+- Our gifs were coming back, alright, but they weren't displaying in the right order 😱
+- It was everything we'd learnt last week in action! Except that we wanted things to be synced (one after another) rather than async
+- Resolving this was a special level of hell
 
 ---
 
