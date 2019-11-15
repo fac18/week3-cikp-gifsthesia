@@ -12,10 +12,11 @@ while (gifContainer.firstChild) {
     clearArtistTrackHint();
     clearArtistHint();
     clearLyricsHint();
-    getRandomTrackInfo(function() {
-        getRandomTrackLyrics(gifGetter);
+    // getRandomTrackInfo(function() {
+    //     getRandomTrackLyrics(gifGetter);
+    getRandomTrackInfo(getRandomTrackLyrics);
 })
-})
+
 
 //artist hint
 
