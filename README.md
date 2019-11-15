@@ -166,7 +166,7 @@ Lots of this!
 ### How to manipulate objects?
 
 - Understanding objects and how they work was a huge one this week
-- We kept wanting to use array methods on objects, or find a way to copy/map an entire 'key:value' pair into a new object, but it doesn't really work that way
+- We really wanted ti find a way to copy/map entire 'key:value' pairs into a new object, but it doesn't really work that way. If it does, please tell us how!
 
 ---
 
