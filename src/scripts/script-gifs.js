@@ -11,7 +11,7 @@ const separateSnippet = (x) => {
     console.log('this is before the loop', words);
     return words;
 }
-module.exports = separateSnippet;
+// module.exports = separateSnippet;
 separateSnippet(snippet);
 
 const gifStack = (w) => {
