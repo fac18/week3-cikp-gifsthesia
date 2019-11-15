@@ -163,10 +163,19 @@ Lots of this!
 
 ---
 
+### How to manipulate objects?
+
+- Understanding objects and how they work was a huge one this week
+- We kept wanting to use array methods on objects, or find a way to copy/map an entire 'key:value' pair into a new object, but it doesn't really work that way
+
+---
+
 ### Misc things learnt
 
-- check your file paths. An errant / here or a missing . there can make all the difference
-
+- Challenges are great, failure is good - that's how you learn! :)
+- Long discussions exploring different methods for solving our problems are really fun!
+- Check your file paths! An errant '/' here or a missing '.' there can make all the difference
+- Georgia and Tony are excellent (patient!) teachers 
 
 
 
