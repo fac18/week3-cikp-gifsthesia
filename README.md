@@ -145,6 +145,10 @@ Lots of this!
 
 ---
 
+### Click twice to start
+
+---
+
 ### Sync vs Async and the Event Loop
 
 - Our gifs were coming back, alright, but they weren't displaying in the right order 😱
@@ -153,14 +157,29 @@ Lots of this!
 
 ---
 
+### Error message when running Giphy API
+
+- Works just fine in local machine's live server
+- Seems like GitHub pages is blocking the API request
+- HTTPS? SSL certificate? CORS? Running insecure content?
+
 ![](https://i.imgur.com/ocSKhEb.png)
+
+---
+
+### How to manipulate objects?
+
+- Understanding objects and how they work was a huge one this week
+- We really wanted ti find a way to copy/map entire 'key:value' pairs into a new object, but it doesn't really work that way. If it does, please tell us how!
 
 ---
 
 ### Misc things learnt
 
-- check your file paths. An errant / here or a missing . there can make all the difference
-
+- Challenges are great, failure is good - that's how you learn! :)
+- Long discussions exploring different methods for solving our problems are really fun!
+- Check your file paths! An errant '/' here or a missing '.' there can make all the difference
+- Georgia and Tony are excellent (patient!) teachers 
 
 
 
