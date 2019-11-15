@@ -10,11 +10,11 @@ Jamie, Kin, Reda &amp; Roshan's API project
 
 - Clone the repo
 - cd into the directory
-- run npm install
+- run ```npm install```
 
 This will install tape, tap-spec, nodemon and nyc as dev-dependencies, since these are listed in our package.json file.
 
-You can then run npm test to run the tests, or npm run coverage to run nyc alongside
+You can then run ```npm test``` to run the tests, or ```npm run coverage``` to run nyc alongside
 
 ---
 
@@ -23,13 +23,6 @@ You can then run npm test to run the tests, or npm run coverage to run nyc along
 A game that involves guessing a song based on a snippet of its lyrics, where each word is represented by a GIF. Snazzy!
 
 ![](https://media.giphy.com/headers/2019-11-13-31-1573677075/unnamed.gif)
-
----
-
-// NOTES
-Readme requirements to-do:
-- A clearly defined user journey, documented in your readme.
-- more screenshots of how game should look
 
 ---
 
@@ -59,23 +52,7 @@ Musixmatch x Giphy
 
 ---
 
-### We used the Musixmatch API to:
-
-1. request the top 50 chart tracks from the UK
-* we created a function to select a random song from this      
-2. send a song's ID and request the lyric snippet, song name and artist 
-
----
-
-### and the Giphy API to:
-
-1. 
-2. 
-3.
-
----
-
-### The Gifsthesia User Journey
+### The User Journey
 
 1. Landing Page = Home page = all the pages = 1 page site!
 2. Title & instructions for playing the game
@@ -83,10 +60,32 @@ Musixmatch x Giphy
 4. User tries to guess the lyrics from the displayed gifs
 5. User can click on hint buttons. The first hint button reveals the artist, the second reveals the lyric snippet
 6. Finally, the user is exhausted trying to solve this impossible challenge, they hit the reveal button to reveal the song name and who sang it!
-
 7. Repeat above from point 3. 
 
 *insert callbacks/ recursion joke here*
+
+---
+
+### We used the Musixmatch API to:
+
+1. Request the top 50 chart tracks from the UK
+* we created a function to select a random song from this
+
+*insert code snippet*
+
+2. send a song's ID and request the lyric snippet, song name and artist 
+
+*insert code snippet*
+
+---
+
+### and the Giphy API to:
+
+* after running the lyric snippet through a function to create an array of separate words
+1. Loop through each word in the lyric snippet, making an API request with each iteration
+* select the first result from each Giphy search, and append this to the DOM
+
+*insert code snippet*
 
 ---
 
@@ -94,6 +93,10 @@ Musixmatch x Giphy
 
 ![](https://i.imgur.com/ehZt5ck.png)
 ![](https://i.imgur.com/yatXpg5.png)
+
+We made a plan, and we stuck to it.
+- Issues with path naming to link files, e.g. we were missing just a ```.``` which broke the link between our HTML and CSS. We downloaded the Path Autocomplete extension to help.
+- Variables and functions must be exported when using ```use strict``` mode, to access them from different files
 
 ---
 
