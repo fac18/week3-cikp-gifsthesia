@@ -1,3 +1,5 @@
+let lyricsKey = config.LYRICS_KEY; // fetch key from config file
+
 // Declare a new object to later store our random track info
 const trackInfo = {
     id: 0,
@@ -16,7 +18,7 @@ function arrayPickRandom(arr) {
 function getRandomTrackInfo(callback) {
     const xhr = new XMLHttpRequest();
     // A workaround for the CORS problem involves appending the following link just before the url - https://cors-anywhere.herokuapp.com/
-    const url = "https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=a515bb508047c4dbf594264ecfde2094&chart_name=top&page=1&page_size=50&country=uk&f_has_lyrics=1"
+    const url = "https://api.musixmatch.com/ws/1.1/chart.tracks.get?" + lyricsKey + "&chart_name=top&page=1&page_size=50&country=uk&f_has_lyrics=1"
     xhr.onreadystatechange = function() {
         // console.log("getRandomTrackInfo onreadystatechange");
         if (xhr.readyState === 4 && xhr.status === 200) {

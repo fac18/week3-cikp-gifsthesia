@@ -1,3 +1,5 @@
+let gifKey = config.GIFS_KEY; // fetch key from config file
+
 function gifGetter() {
 
     let snippet = trackInfo.lyrics;
@@ -19,7 +21,7 @@ function gifGetter() {
 
             function gifCall() {
                 let xhr = new XMLHttpRequest();
-                let url = "https://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=1";
+                let url = "https://api.giphy.com/v1/gifs/search?q=" + snippetWord + gifKey + "&limit=1";
         
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState == 4 && xhr.status == 200) {
