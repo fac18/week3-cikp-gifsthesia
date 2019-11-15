@@ -16,7 +16,13 @@ separateSnippet(snippet);
 
 const gifStack = (w) => {
     console.log('this is immediately before the loop', w);
+    let obj = {};
+    let fakeObj = {
+        0: "jamie",
+        1: "carter"
+    };
     for (let i=0; i<words.length; i++) {
+        let id = words.indexOf(words[i]);
         let snippetWord = words[i];
 
 
@@ -27,19 +33,33 @@ const gifStack = (w) => {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let giphyObj = JSON.parse(xhr.responseText);
-            console.log(giphyObj);
-            let newGif = document.createElement("img");
-            let gifContainer = document.querySelector(".gif-container");
-            gifContainer.appendChild(newGif);
-            let link = giphyObj.data[0].images.downsized_medium.url;
-            newGif.src = link;
+            //console.log(giphyObj);
+            //let newGif = document.createElement("img");
+            //let gifContainer = document.querySelector(".gif-container");
+            //gifContainer.appendChild(newGif);
+            fakeObj["3"] = "rules";
+            obj[id] = giphyObj.data[0].images.downsized_medium.url;
+            //let link = giphyObj.data[0].images.downsized_medium.url;
+            //return obj;
+
+            //newGif.src = link;
             // wait(1000);
         }
+        
     }
     xhr.open("GET", url, true)
     xhr.send();
 })();
 };
+console.log("This is the obj", obj);
+console.log("The url object's length", obj.length);
+console.log("The type of the urls object", typeof(obj));
+
+console.log("here is a hardcoded obj", fakeObj);
+console.log("does fakeobj have property 1", fakeObj.hasOwnProperty(1));
+console.log("does fakeobj have property 3", fakeObj.hasOwnProperty("3"));
+console.log("print fakeobj object values", Object.values(fakeObj));
+//console.log("This is the new array of urls", urlsArray);
 }
 gifStack(words);
 };
