@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to top, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #36d1dc, #5b86e5);
     color: white;
     text-transform: uppercase;
     display: flex;
@@ -115,6 +115,8 @@ button:hover {
 
 .new-game {
     background-color: var(--darklime);
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 .hint-artist {

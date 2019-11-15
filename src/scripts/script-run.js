@@ -8,6 +8,7 @@ newGameButton.addEventListener('click', function() {
 while (gifContainer.firstChild) {
         gifContainer.removeChild(gifContainer.firstChild);
     }
+    showButton()
     clearArtistTrackHint();
     clearArtistHint();
     clearLyricsHint();
@@ -46,7 +47,7 @@ let lyricsName = document.createElement('h3');
 lyricsHintButton.addEventListener('click', function() {
     console.log(trackInfo.lyrics);
     let lyricsHint = lyricsHintButton.appendChild(lyricsName);
-    lyricsHint.textContent = "Lyrics: " + trackInfo.lyrics;
+    lyricsHint.textContent = "Lyrics: " + '"'+trackInfo.lyrics +'"';
 });
 
 const clearLyricsHint = function() {
@@ -67,7 +68,7 @@ let artistTrackName = document.createElement('h3');
 artistTrackHintButton.addEventListener('click', function() {
     console.log(trackInfo.artist);
     let artistTrackHint = artistTrackHintButton.appendChild(artistTrackName);
-    artistTrackHint.textContent = "Song: " + trackInfo.artist + "- " + trackInfo.track;
+    artistTrackHint.textContent = "Song: " + trackInfo.artist + " - " + trackInfo.track + " - " + '"'+trackInfo.lyrics +'"';
 })
 
 const clearArtistTrackHint = function() {
@@ -80,3 +81,26 @@ const clearArtistTrackHint = function() {
 }
 }
 
+//Hide buttons
+
+let hidden = false;
+    function hideButtons() {
+        hidden = !hidden;
+        document.querySelector('.hint-artist').style.visibility = 'hidden';
+        document.querySelector('.hint-lyrics').style.visibility = 'hidden';
+        document.querySelector('.reveal-song').style.visibility = 'hidden';
+
+    };
+
+    hideButtons();
+
+    function showButton() {
+        document.querySelector('.hint-artist').style.visibility = 'visible';
+        document.querySelector('.hint-lyrics').style.visibility = 'visible';
+        document.querySelector('.reveal-song').style.visibility = 'visible';
+    };
+    
+
+
+    
+   
