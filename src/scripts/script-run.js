@@ -8,6 +8,7 @@ newGameButton.addEventListener('click', function() {
 while (gifContainer.firstChild) {
         gifContainer.removeChild(gifContainer.firstChild);
     }
+    showButton()
     clearArtistTrackHint();
     clearArtistHint();
     clearLyricsHint();
@@ -79,3 +80,26 @@ const clearArtistTrackHint = function() {
 }
 }
 
+//Hide buttons
+
+let hidden = false;
+    function hideButtons() {
+        hidden = !hidden;
+        document.querySelector('.hint-artist').style.visibility = 'hidden';
+        document.querySelector('.hint-lyrics').style.visibility = 'hidden';
+        document.querySelector('.reveal-song').style.visibility = 'hidden';
+
+    };
+
+    hideButtons();
+
+    function showButton() {
+        document.querySelector('.hint-artist').style.visibility = 'visible';
+        document.querySelector('.hint-lyrics').style.visibility = 'visible';
+        document.querySelector('.reveal-song').style.visibility = 'visible';
+    };
+    
+
+
+    
+   
