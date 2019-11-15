@@ -145,6 +145,10 @@ Lots of this!
 
 ---
 
+### Click twice to start
+
+---
+
 ### Sync vs Async and the Event Loop
 
 - Our gifs were coming back, alright, but they weren't displaying in the right order 😱
