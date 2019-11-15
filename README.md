@@ -92,7 +92,8 @@ Musixmatch x Giphy
 
 ### Software Architecture
 
-*insert image here*
+![](https://i.imgur.com/ehZt5ck.png)
+![](https://i.imgur.com/yatXpg5.png)
 
 ---
 
