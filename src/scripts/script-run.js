@@ -45,7 +45,7 @@ let lyricsName = document.createElement('h3');
 lyricsHintButton.addEventListener('click', function() {
     console.log(trackInfo.lyrics);
     let lyricsHint = lyricsHintButton.appendChild(lyricsName);
-    lyricsHint.textContent = "Lyrics: " + trackInfo.lyrics;
+    lyricsHint.textContent = "Lyrics: " + '"'+trackInfo.lyrics +'"';
 });
 
 const clearLyricsHint = function() {
@@ -66,7 +66,7 @@ let artistTrackName = document.createElement('h3');
 artistTrackHintButton.addEventListener('click', function() {
     console.log(trackInfo.artist);
     let artistTrackHint = artistTrackHintButton.appendChild(artistTrackName);
-    artistTrackHint.textContent = "Song: " + trackInfo.artist + "- " + trackInfo.track;
+    artistTrackHint.textContent = "Song: " + trackInfo.artist + " - " + trackInfo.track + " - " + '"'+trackInfo.lyrics +'"';
 })
 
 const clearArtistTrackHint = function() {
