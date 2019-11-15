@@ -22,7 +22,7 @@ const gifStack = (w) => {
 
 (function(){
     let xhr = new XMLHttpRequest();
-    let url = "http://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=2";
+    let url = "https://api.giphy.com/v1/gifs/search?q=" + snippetWord + "&api_key=dc6zaTOxFJmzC&limit=2";
     console.log('this is snippetword', snippetWord);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
