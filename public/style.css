@@ -50,6 +50,7 @@ footer {
 
 img {
     margin: var(--space-s);
+    height:200px;
 }
 
 h1 {
