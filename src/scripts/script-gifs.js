@@ -14,7 +14,7 @@ function gifGetter() {
     const separateSnippet = (x) => {
         let snippedSnippet = snippet.replace(/'/g, "");
         words = snippedSnippet.split(" ");
-        console.log(words);
+        console.log("This is the array of words", words);
         return words;
     }
 
@@ -43,8 +43,9 @@ function gifGetter() {
             };
         };
         setTimeout(function appendImages() {
-            console.log(urlObj);
-            console.log(Object.values(urlObj));
+            console.log("This is the object of urls", urlObj);
+            console.log("This is the array of urls", Object.values(urlObj));
+            console.log("HELL YEAH")
             let urlArray = Object.values(urlObj);
             for (let j=0; j<urlArray.length; j++) {
                 let newGif = document.createElement("img");
