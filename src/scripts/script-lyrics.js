@@ -1,4 +1,4 @@
-//let lyricsKey = config.LYRICS_KEY; // fetch key from config file
+let lyricsKey = config.LYRICS_KEY; // fetch key from config file
 
 // Declare a new object to later store our random track info
 const trackInfo = {

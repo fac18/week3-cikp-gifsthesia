@@ -1,5 +1,5 @@
 
-//let gifKey = config.GIFS_KEY; // fetch key from config file
+let gifKey = config.GIFS_KEY; // fetch key from config file
 
 // Wrapper function to allow all the below to run from one call.
 
