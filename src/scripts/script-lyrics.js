@@ -1,4 +1,5 @@
-let lyricsKey = config.LYRICS_KEY; // fetch key from config file
+// can add api keys to a config file to hide them from users
+//let lyricsKey = config.LYRICS_KEY; // fetch key from config file
 
 // Declare a new object to later store our random track info
 const trackInfo = {
