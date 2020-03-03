@@ -1,5 +1,5 @@
-
-let gifKey = config.GIFS_KEY; // fetch key from config file
+// can add api keys to a config file to hide them from users
+//let gifKey = config.GIFS_KEY; // fetch key from config file
 
 // Wrapper function to allow all the below to run from one call.
 
@@ -14,7 +14,6 @@ function gifGetter() {
     const separateSnippet = (x) => {
         let snippedSnippet = snippet.replace(/'/g, "");
         words = snippedSnippet.split(" ");
-        console.log("This is the array of words", words);
         return words;
     }
 
@@ -34,8 +33,7 @@ function gifGetter() {
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState == 4 && xhr.status == 200) {
                         let giphyObj = JSON.parse(xhr.responseText);
-                        urlObj[id] = giphyObj.data[0].images.downsized_medium.url;
-                        
+                        urlObj[id] = giphyObj.data[0].images.downsized_medium.url;                     
                     }
                 }
             xhr.open("GET", url, true)
@@ -43,9 +41,6 @@ function gifGetter() {
             };
         };
         setTimeout(function appendImages() {
-            console.log("This is the object of urls", urlObj);
-            console.log("This is the array of urls", Object.values(urlObj));
-            console.log("HELL YEAH")
             let urlArray = Object.values(urlObj);
             for (let j=0; j<urlArray.length; j++) {
                 let newGif = document.createElement("img");
@@ -55,7 +50,6 @@ function gifGetter() {
                 let link = urlArray[j];
                 newGif.src = link;
             }
-        
         }, 1000);
     }
 gifStack(words);

@@ -5,7 +5,6 @@ let test = require('tape');
 const separateSnippet = (x) => {
   let snippedSnippet = snippet.replace(/'/g, "");
   words = snippedSnippet.split(" ");
-  console.log('this is before the loop', words);
   return words;
 }
 
